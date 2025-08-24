@@ -57,5 +57,15 @@ const newNums = numbers
                 .map( (num)=>num+10)
                 .map((num)=> num+1)
                 .filter((num)=> num>=14);
-console.log(newNums);
+//console.log(newNums);
 
+
+//lets move toward reduce
+
+let finalArr= [100,200,300,400,500]
+
+let totalVal= finalArr.reduce((acc, val)=>{
+    return acc+val;
+},0)
+
+console.log("total value of array after adding is ", totalVal);
