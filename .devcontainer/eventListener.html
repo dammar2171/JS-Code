@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Event listener</h1>
+    <div>
+      <ul class="numberlist">
+        <li class="num">One</li>
+        <li class="num">two</li>
+        <li class="num">three</li>
+        <li class="num">four</li>
+      </ul>
+    </div>
+    <script>
+      const numberlist = document.querySelector(".numberlist");
+      numberlist.addEventListener("click", (e) => {
+        console.log(e.target); 
+        let removeIt = e.target; //provide current tag
+        removeIt.remove();      //remove(); help to remove it from ul
+      });
+    </script>
+  </body>
+</html>
+
+//e.target.parentNode ---provide parent node like UL in this case
